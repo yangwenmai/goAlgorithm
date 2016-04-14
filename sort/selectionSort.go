@@ -15,15 +15,10 @@ func main() {
 
     for i:=0;i<arr_len;i++{
         min := i
-        flag :=true
         for j:=i;j<arr_len;j++{
             if arr[min]>arr[j]{
-                flag=false
                 min = j
             }
-        }
-        if flag {
-            break
         }
         arr[i],arr[min] = arr[min],arr[i]
         fmt.Println(arr)
