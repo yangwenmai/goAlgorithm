@@ -8,13 +8,20 @@ import (
 )
 
 func main()  {
-	url := "http://www.baidus.com"
+	url := "http://www.baidu.com"
 	resp,err := http.Get(url)
 
 	if err!=nil{
 		fmt.Println(err.Error())
 		log.Fatal(err)
 	}
+
+	getBody(resp)
+
+}
+
+
+func getBody(resp *http.Response)  {
 
 	if resp.StatusCode == http.StatusOK{
 		fmt.Println(resp.StatusCode)
@@ -25,7 +32,7 @@ func main()  {
 	buf := make([]byte,1024)
 
 
-	f,err1 := os.OpenFile("path.txt",os.O_RDWR|os.O_APPEND|os.O_CREATE,os.ModePerm)
+	f,err1 := os.OpenFile("html.txt",os.O_RDWR|os.O_APPEND|os.O_CREATE,os.ModePerm)
 
 	if err1!=nil{
 		panic(err1)
@@ -42,5 +49,4 @@ func main()  {
 
 	defer f.Close()
 
-	fmt.Print(resp)
 }

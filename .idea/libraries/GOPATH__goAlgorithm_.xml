@@ -8,7 +8,13 @@
       <root url="file://$USER_HOME$/Library/Go/src/github.com" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="file://$USER_HOME$/IdeaProjects/src/github.com" />
+      <root url="file://$USER_HOME$/IdeaProjects/src/codecrops.com" />
+      <root url="file://$USER_HOME$/IdeaProjects/src/apibox.club" />
+      <root url="file://$USER_HOME$/IdeaProjects/src/golang.org" />
+      <root url="file://$USER_HOME$/Library/Go/src/github.com" />
+    </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />
     </excluded>
